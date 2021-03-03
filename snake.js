@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 const cellSize = 25;
-const defaultSize = 1;
+const defaultSize = 3;
 
 const snakeCell = {
   width: cellSize,
@@ -138,6 +138,6 @@ function keyDownHandle(e) {
 }
 
 makeSnake();
-setInterval(updateCanvas, 75);
+setInterval(updateCanvas, 65);
 
 document.addEventListener('keydown', keyDownHandle);
